@@ -1,4 +1,4 @@
-#! /usr/bin/python
+#! /usr/bin/python3
 from subscription_manager.base_plugin import SubManPlugin
 
 

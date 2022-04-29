@@ -9,7 +9,7 @@ export PYBUILD_DISABLE=test
 include /usr/share/dpkg/default.mk
 
 %:
-	dh $@ --with python2 --buildsystem=pybuild
+	dh $@ --with python3 --buildsystem=pybuild
 # 	dh $@ --with python2,python3 --buildsystem=pybuild
 
 override_dh_auto_clean:
@@ -21,7 +21,7 @@ override_dh_auto_build:
 	make -f Makefile GTK_VERSION=2 OS_DIST=debian PREFIX=/usr VERSION=${DEB_VERSION_UPSTREAM_REVISION}
 
 override_dh_auto_install:
-	make -f Makefile install GTK_VERSION=2 OS_DIST=debian PREFIX=/usr VERSION=${DEB_VERSION_UPSTREAM_REVISION} DESTDIR=debian/python-subscription-manager
-	sed -i -e '/dbus-python/d' debian/python-subscription-manager/usr/lib/python2.7/site-packages/subscription_manager-*.egg-info/requires.txt
+	make -f Makefile install GTK_VERSION=2 OS_DIST=debian PREFIX=/usr VERSION=${DEB_VERSION_UPSTREAM_REVISION} DESTDIR=debian/python3-subscription-manager
+	sed -i -e '/dbus-python/d' debian/python3-subscription-manager/usr/lib/python3.10/site-packages/subscription_manager-*.egg-info/requires.txt
 
 override_dh_auto_test:

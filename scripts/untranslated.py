@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 # sort of kind of a translation lint
 #
 # require's polib from https://bitbucket.org/izi/polib/wiki/Home

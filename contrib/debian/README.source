@@ -4,7 +4,7 @@ subscription-manager for Debian
 Required packages for build
 ---------------------------
 
-* build-essentials
+* build-essential
 * devscripts (for dch)
 * equivs (for mk-build-deps)
 
