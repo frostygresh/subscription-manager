@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 # dump out the msg keys by themselves, newline seperated
 #

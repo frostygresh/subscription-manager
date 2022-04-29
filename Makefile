@@ -13,7 +13,7 @@
 #   just the fastest or easiest way.
 
 SHELL := /bin/bash
-PYTHON ?= python
+PYTHON ?= python3
 DESTDIR ?= /
 PREFIX ?= /usr/local
 SYSCONF ?= etc
